@@ -1,4 +1,4 @@
-# Package Pilihan:
+# Package Pilihan :
 
 package di laravel sama seperti plugin di wordpress. Perbedaannya adalah package di laravel bersifat fleksibel namun membutuhkan konfigurasi atau customisasi lebih banyak daripada plugin wordpress. Berikut beberapa package yang memudahkan pekerjaan kita menggunakan laravel :
 
@@ -7,9 +7,16 @@ package di laravel sama seperti plugin di wordpress. Perbedaannya adalah package
 * **Sweet Alert**, membuat 'alert notifikasi' lebih dinamis, elegan dan menarik
 * **Laravel Excel**, cara mudah eksport-import data dari dan ke format excel/csv
 * **Laravel-dompdf, **membuat pdf menjadi lebih mudah dengan integrasi laravel dan library dompdf
-* ** **   
+* **L5 Swagger**, dokumentasi API menggunakan format swagger ui
 
-### 
+# Library Pilihan :
+
+* **Bootstrap 3.x**, mobile framework css, styling web responsive menjadi lebih mudah.
+* **DataTables Jquery**, menampilkan data dalam bentuk tabel + pencarian otomatis + pagination.
+* **ShareThis.com**, sharing link web ke media sosial dengan banyak variasi pilihan dan icon menarik.
+* **Tawk.to**, Fitur Chatting online gratis, kualitas premium. Memungkinkan banyak admin/agen
+* **Disqus.com**, membuat section komentar dengan mudah dan fitur lengkap
+* **Google analytic**, analisis web komprehensif menggunakan tools dari google** **
 
 ### 
 
