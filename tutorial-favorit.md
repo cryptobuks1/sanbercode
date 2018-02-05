@@ -1,4 +1,4 @@
-### Step by Step 
+### Step by Step
 
 # Mastering & Enhancing Laravel 5
 
@@ -19,6 +19,7 @@ berikut adalah rekomendasi tutorial yang disusun berdasarkan pengalaman mencoba 
    3. Membuat database relationship \([https://www.youtube.com/playlist?list=PLfdtiltiRHWEb-tzSN99Zy-39Y1tKl5DB](https://www.youtube.com/playlist?list=PLfdtiltiRHWEb-tzSN99Zy-39Y1tKl5DB)\)
    4. Build API with laravel \([https://www.youtube.com/playlist?list=PLEgI20pG1DqyueOv\_hY4F7t1qRUS\_X4Ny](https://www.youtube.com/playlist?list=PLEgI20pG1DqyueOv_hY4F7t1qRUS_X4Ny)\)
    5. Dokumentasi API Laravel menggunakan swagger \([https://medium.com/@mahbubkabir/discovering-swagger-in-laravel-rest-apis-cb0271c8f2](https://medium.com/@mahbubkabir/discovering-swagger-in-laravel-rest-apis-cb0271c8f2)\)
+
       ---
 4. Enhancing Frontend Laravel
    1. Javascript + Jquery
