@@ -3,11 +3,11 @@
 package di laravel sama seperti plugin di wordpress. Perbedaannya adalah package di laravel bersifat fleksibel namun membutuhkan konfigurasi atau customisasi lebih banyak daripada plugin wordpress. Berikut beberapa package yang memudahkan pekerjaan kita menggunakan laravel :
 
 * **Appzcoder, **membuat CRUD \(Create Edit Update Delete\)
-* **Laravel File Manager**, integrasi dengan **TinyMCE Editor**, membuat textarea menjadi editor yang lengkap seperti editor di wordpress + media manager wordpress
-* **Sweet Alert**, membuat 'alert notifikasi' lebih dinamis, elegan dan menarik
-* **Laravel Excel**, cara mudah eksport-import data dari dan ke format excel/csv
+* **Laravel File Manager by Unisharp**, integrasi dengan **TinyMCE Editor**, membuat textarea menjadi editor yang lengkap seperti editor di wordpress + media manager wordpress
+* **SweetAlert2 for Laravel 5.x by Rashid Ali**, membuat 'alert notifikasi' lebih dinamis, elegan dan menarik
+* **Maatwebsite/Laravel-Excel**, cara mudah eksport-import data dari dan ke format excel/csv
 * **Laravel-dompdf, **membuat pdf menjadi lebih mudah dengan integrasi laravel dan library dompdf
-* **L5 Swagger**, dokumentasi API menggunakan format swagger ui
+* **DarkaOnLine/L5-Swagger**, dokumentasi API menggunakan format swagger ui
 
 # Library Pilihan :
 
