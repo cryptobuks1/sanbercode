@@ -6,5 +6,4 @@
 * [Rekomendasi Tools Tambahan](tes.md)
 * [Tutorial Favorit](tutorial-favorit.md)
 * [Sharing Session](sharing-session.md)
-  * [mailer](sharing-session/mailer.md)
 
