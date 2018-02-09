@@ -7,5 +7,4 @@
 * [Tutorial Favorit](tutorial-favorit.md)
 * [Sharing Session](sharing-session.md)
   * [Laravel Helper](sharing-session/laravel-helper.md)
-  * [Laravel Helper](sharing-session/laravel-helper.md)
 
