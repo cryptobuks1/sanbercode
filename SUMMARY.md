@@ -7,4 +7,5 @@
 * [Tutorial Favorit](tutorial-favorit.md)
 * [Sharing Session](sharing-session.md)
   * [Helper di Laravel](sharing-session/laravel-helper.md)
+  * [Menggunakan Sweet Alert pada Laravel](menggunakan-sweet-alert-pada-laravel.md)
 
