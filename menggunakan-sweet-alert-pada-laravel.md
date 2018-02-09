@@ -32,5 +32,3 @@ Oke jangan lupa download css dan js [disini](https://drive.google.com/file/d/11o
 
 
 
-
-
