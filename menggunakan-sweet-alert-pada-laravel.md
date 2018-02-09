@@ -20,9 +20,17 @@ Nah sambil nunggu hasil command line yang diatas \(lumyan lama\), mending buka f
 
 > `UxWeb\SweetAlert\SweetAlertServiceProvider::class,`
 
- Oh iya satu lagi code yang mesti di copas, tapi beda tempat ^^ code yg bawah simpen di _facade alias_
+Oh iya satu lagi code yang mesti di copas, tapi beda tempat ^^ code yg bawah simpen di _facade alias_
 
 > `UxWeb\SweetAlert\SweetAlertServiceProvider::class,`
+
+Oke jangan lupa download css dan js [disini](https://drive.google.com/file/d/11ollFhAQEms2BfU1R68xCCOuIzuFdfjN/view?usp=sharing), teru kalian simpen dah tuh code dibawah itu  ke template kalian.
+
+> `<link rel="stylesheet" href="{{ url('sweetalert/sweetalert.min.css') }}">`
+>
+> `<script src="{{ url('sweetalert/sweetalert.min.js') }}"></script>`
+
+
 
 
 
