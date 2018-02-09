@@ -41,9 +41,9 @@ jika ada helper yang dibutuhkan tapi tidak ada dalam global helper laravel, kita
 
    `},`
 
-3. run composer dump-autoload dalam terminal
+3. run `composer dump-autoload` dalam terminal
 
-4. buatlah funsi yang anda ingin gunakan dalam helpers.php
+4. buatlah fungsi yang anda ingin gunakan dalam helpers.php
 
 Referensi:
 
