@@ -1,6 +1,8 @@
-## **Helper di Laravel -  SanberTEDx 2 Februari 2017 **
+## **Helper di Laravel -  SanberTEDx 2 Februari 2017 by Abdul Alim**
 
-## **by Abdul Alim**
+#### 
+
+
 
 #### **Apa itu Helper?**
 
