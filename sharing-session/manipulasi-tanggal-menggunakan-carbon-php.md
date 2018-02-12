@@ -40,7 +40,6 @@ $ConvertedDate2 = Carbon::parse($created_at)->formatLocalized('%d %b %y, %H:%M W
 
 $ConvertedDate3 = Carbon::parse($created_at)->formatLocalized('%d %b %y');
 // output : 05 Jan 18
-
 ```
 
 catatan :
