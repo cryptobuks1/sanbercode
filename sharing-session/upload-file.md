@@ -1,6 +1,6 @@
 # Upload File
 
-_by: Khairun_
+_by: Khairun ft Abdul Alim_
 
 Ada 2 cara untuk upload file :
 
