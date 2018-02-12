@@ -2,9 +2,9 @@
 
 _by: Khairun_
 
-Ada 2 cara untuk upload file..
+Ada 2 cara untuk upload file :
 
-1.Menggunakan code manual PHP.. 
+#### **Menggunakan code manual PHP**
 
 ```php
 // fungsi ini menerima kiriman request dari form
@@ -37,38 +37,39 @@ public function functionName(Request $request)
 }
 ```
 
-2. Menggunakan package [**Laravel File Manager by Unisharp**](https://unisharp.github.io/laravel-filemanager/)
+#### Menggunakan package [**Laravel File Manager by Unisharp**](https://unisharp.github.io/laravel-filemanager/)
 
-* buatlah sebuah button, input, and image preview holder jika akan memilih gambar. tentukan id yang akan digunakan dalam input dan image berdasarkan `data-input` dan `data-preview`
+1. buatlah sebuah button, input, and image preview holder jika akan memilih gambar. tentukan id yang akan digunakan dalam input dan image berdasarkan `data-input` dan `data-preview`
 
-  ```php
-  <div class="input-group">
-     <span class="input-group-btn">
-       <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-         <i class="fa fa-picture-o"></i> Choose
-       </a>
-     </span>
-     <input id="thumbnail" class="form-control" type="text" name="filepath">
-   </div>
-   <img id="holder" style="margin-top:15px;max-height:100px;">
-  ```
+   ```php
+   <div class="input-group">
+      <span class="input-group-btn">
+        <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
+          <i class="fa fa-picture-o"></i> Choose
+        </a>
+      </span>
+      <input id="thumbnail" class="form-control" type="text" name="filepath">
+    </div>
+    <img id="holder" style="margin-top:15px;max-height:100px;">
+   ```
 
-* Import lfm.js pada view \(jalankan php artisan vendor:publish jika dibutuhkan\).
+2. Import lfm.js pada view \(jalankan php artisan vendor:publish jika dibutuhkan\).
 
-  ```php
-  <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
-  ```
+   ```php
+   <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
+   ```
 
-* Init filemanager dengan type. \(membutuhkan jQuery\)
-  ```js
-   $('#lfm').filemanager('image');
-  ```
+3. Init filemanager dengan type. \(membutuhkan jQuery\)
 
-  atau
+   ```js
+    $('#lfm').filemanager('image');
+   ```
 
-  ```js
-   $('#lfm').filemanager('file');
-  ```
+   atau
+
+   ```js
+    $('#lfm').filemanager('file');
+   ```
 
 
 
