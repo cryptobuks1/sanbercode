@@ -2,7 +2,9 @@
 
 _by: Khairun_
 
-Berikut code yang digunakan untuk upload file
+Ada 2 cara untuk upload file..
+
+1. Menggunakan code manual PHP.. 
 
 ```php
 // fungsi ini menerima kiriman request dari form
@@ -34,6 +36,10 @@ public function functionName(Request $request)
 
 }
 ```
+
+2. Menggunakan package [**Laravel File Manager by Unisharp**](https://unisharp.github.io/laravel-filemanager/)
+
+....
 
 
 
