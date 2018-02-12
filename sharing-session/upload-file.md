@@ -37,9 +37,22 @@ public function functionName(Request $request)
 }
 ```
 
-2. Menggunakan package [**Laravel File Manager by Unisharp**](https://unisharp.github.io/laravel-filemanager/)
+  2. Menggunakan package [**Laravel File Manager by Unisharp**](https://unisharp.github.io/laravel-filemanager/)
 
-....
+* buatlah sebuah button, input, and image preview holder jika akan memilih gambar. tentukan id yang akan digunakan dalam input dan image berdasarkan `data-input` dan `data-preview`
+  ```php
+  <div class="input-group">
+     <span class="input-group-btn">
+       <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
+         <i class="fa fa-picture-o"></i> Choose
+       </a>
+     </span>
+     <input id="thumbnail" class="form-control" type="text" name="filepath">
+   </div>
+   <img id="holder" style="margin-top:15px;max-height:100px;">
+  ```
+
+* Import lfm.js \(run php artisan vendor:publish jika dibutuhkan\).
 
 
 
