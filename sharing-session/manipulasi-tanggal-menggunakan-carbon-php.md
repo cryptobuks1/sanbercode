@@ -36,11 +36,20 @@ $ConvertedDate = Carbon::parse($created_at)->formatLocalized('%d %B %Y, %H:%M WI
 // output : 05 January 2018, 17:56 WIB
 
 $ConvertedDate2 = Carbon::parse($created_at)->formatLocalized('%d %b %y, %H:%M WIB');
+// output : 05 Jan 18, 17:56 WIB
 
-
-
+$ConvertedDate3 = Carbon::parse($created_at)->formatLocalized('%d %b %y');
+// output : 05 Jan 18
 
 ```
+
+catatan :
+
+* **%d** untuk menampilkan tanggal \(tidak termasuk bulan dan tahun\)
+* **%B **menampilkan bulan dalam versi lengkap, **%b **menampilkan bulan dalam versi ringkas \(misal: jan, des, feb, dst..\)
+* **%Y **menampilkan tahun dalam versi lengkap, **%y **menampilkan tahun dalam versi ringkas \(misal: 2016 =&gt; ditulis hanya 16\)
+* **%H **menampilkan jam \(Hours\), **%M **menampilkan menit \(minutes\)
+* Kita dapat menambahkan string apa saja misal 'WIB', tanda '**:' **diantara jam dan menit, dsb.. intinya didalam fungsi formatLocalized\(\), secara otomatis akan mengubah variabel yang dikenali, yaitu huruf yang sebelumnya menggunakan tanda '%'  ** ** 
 
 
 
