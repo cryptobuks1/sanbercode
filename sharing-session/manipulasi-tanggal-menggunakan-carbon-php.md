@@ -48,7 +48,7 @@ catatan :
 * **%B **menampilkan bulan dalam versi lengkap, **%b **menampilkan bulan dalam versi ringkas \(misal: jan, des, feb, dst..\)
 * **%Y **menampilkan tahun dalam versi lengkap, **%y **menampilkan tahun dalam versi ringkas \(misal: 2016 =&gt; ditulis hanya 16\)
 * **%H **menampilkan jam \(Hours\), **%M **menampilkan menit \(minutes\)
-* Kita dapat menambahkan string apa saja misal 'WIB', tanda '**:' **diantara jam dan menit, dsb.. intinya didalam fungsi formatLocalized\(\), secara otomatis akan mengubah variabel yang dikenali, yaitu huruf yang sebelumnya menggunakan tanda '%'  ** ** 
+* Kita dapat menambahkan string apa saja misal 'WIB', tanda '**:' **diantara jam dan menit, dsb.. intinya didalam fungsi formatLocalized\(\), secara otomatis akan mengubah variabel yang dikenali, yaitu huruf yang sebelumnya menggunakan tanda '%' . ** ** 
 
 
 
