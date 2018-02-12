@@ -1,8 +1,10 @@
 # Upload File
 
+_by: Khairun_
+
 Berikut code yang digunakan untuk upload file
 
-```
+```php
 // fungsi ini menerima kiriman request dari form
 
 public function functionName(Request $request)
