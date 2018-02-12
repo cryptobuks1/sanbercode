@@ -14,6 +14,7 @@ package di laravel sama seperti plugin di wordpress. Perbedaannya adalah package
 * [**Bootstrap 3.x**](https://getbootstrap.com/docs/3.3/), mobile framework css, styling web responsive menjadi lebih mudah.
 * [**DataTables Jquery**](https://datatables.net/), menampilkan data dalam bentuk tabel + pencarian otomatis + pagination.
 * [**ShareThis**](https://www.sharethis.com/), sharing link web ke media sosial dengan banyak variasi pilihan dan icon menarik.
+* [**Carbon**](http://carbon.nesbot.com/), PHP API extension untuk pengaturan tanggal dan waktu.
 * [**Tawk.to**](https://www.tawk.to/), Fitur Chatting online gratis, kualitas premium. Memungkinkan banyak admin/agen.
 * [**Disqus.com**](https://disqus.com/), membuat section komentar dengan mudah dan fitur lengkap.
 * [**Google analytic**](https://analytics.google.com/analytics/web/), analisis web komprehensif menggunakan tools dari google.
