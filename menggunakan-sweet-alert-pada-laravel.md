@@ -14,21 +14,29 @@ Langsung aja kali ya"
 
 Langkah pertama siapin [Composer ](https://getcomposer.org)biar bisa bikin _Command Line._
 
-> `composer require uxweb/sweet-alert`
+```
+composer require uxweb/sweet-alert
+```
 
 Nah sambil nunggu hasil command line yang diatas \(lumyan lama\), mending buka folder config/app.php terus copas dah tuh code yg di bawah ke providers array
 
-> `UxWeb\SweetAlert\SweetAlertServiceProvider::class,`
+```
+UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+```
 
 Oh iya satu lagi code yang mesti di copas, tapi beda tempat ^^ code yg bawah simpen di _facade alias_
 
-> `UxWeb\SweetAlert\SweetAlertServiceProvider::class,`
+```
+UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+```
 
 Oke jangan lupa download css dan js [disini](https://drive.google.com/file/d/11ollFhAQEms2BfU1R68xCCOuIzuFdfjN/view?usp=sharing), teru kalian simpen dah tuh code dibawah itu  ke template kalian.
 
-> `<link rel="stylesheet" href="{{ url('sweetalert/sweetalert.min.css') }}">`
->
-> `<script src="{{ url('sweetalert/sweetalert.min.js') }}"></script>`
+```
+<link rel="stylesheet" href="{{ url('sweetalert/sweetalert.min.css') }}">
+...
+<script src="{{ url('sweetalert/sweetalert.min.js') }}"></script>
+```
 
 
 
