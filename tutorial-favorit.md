@@ -28,16 +28,18 @@ berikut adalah rekomendasi tutorial yang disusun berdasarkan pengalaman mencoba 
       2. basic jquery \([https://www.sekolahkoding.com/kelas/belajar-jquery-dari-dasar](https://www.sekolahkoding.com/kelas/belajar-jquery-dari-dasar)\)  
       3. Ajax \([https://www.sekolahkoding.com/kelas/ajax-dengan-javascript-dan-jquery](https://www.sekolahkoding.com/kelas/ajax-dengan-javascript-dan-jquery)\)  
    2. Vue Js  
-      1. Object Programming JavaScript \([https://www.sekolahkoding.com/kelas/intro-objek](https://www.sekolahkoding.com/kelas/intro-objek)\)   
+      1. Object Programming JavaScript \([https://www.sekolahkoding.com/kelas/intro-objek](https://www.sekolahkoding.com/kelas/intro-objek)\)  
       2. EcmaScript 2015 - modern JavaScript \([https://www.sekolahkoding.com/kelas/belajar-es6](https://www.sekolahkoding.com/kelas/belajar-es6)\)  
-      3. Basic vue-laravel \([https://www.youtube.com/playlist?list=PLFfUPa9IV8LpLQmT\_hRihH58Z\_qCcCEJh](https://www.youtube.com/playlist?list=PLFfUPa9IV8LpLQmT_hRihH58Z_qCcCEJh)\)  
-      4. Real Time vue-laravel-socket \([https://www.youtube.com/playlist?list=PLkZU2rKh1mT-Wd6vVwSLjf02caq57xyoO](https://www.youtube.com/playlist?list=PLkZU2rKh1mT-Wd6vVwSLjf02caq57xyoO)
+      3. Basic vue-laravel :  
+   [fundamental \(https://www.youtube.com/playlist?list=PLwAKR305CRO\_1yAao-8aZiQnBqJeyng4O](https://www.youtube.com/playlist?list=PLwAKR305CRO_1yAao-8aZiQnBqJeyng4O)\)[  
+   crud laravel-vue \(https://www.youtube.com/playlist?list=PLFfUPa9IV8LpLQmT\_hRihH58Z\_qCcCEJh](https://www.youtube.com/playlist?list=PLFfUPa9IV8LpLQmT_hRihH58Z_qCcCEJh)\)  
+      4. Real Time vue-laravel-socket \([https://www.youtube.com/playlist?list=PLkZU2rKh1mT-Wd6vVwSLjf02caq57xyoO](https://www.youtube.com/playlist?list=PLkZU2rKh1mT-Wd6vVwSLjf02caq57xyoO)\)
 
-   ---
+---
 
-5. Tambahan :
-   1. Wordpress untuk membuat web dengan fungsi umum secara cepat
-      1. Wordpress untuk pemula \([https://www.youtube.com/watch?v=VM2UPE64GD4&list=PLFLsT6z\_5FzlOlJqYiMHUcRuFkF2fHMRq](https://www.youtube.com/playlist?list=PLFLsT6z_5FzlOlJqYiMHUcRuFkF2fHMRq)\)
+1. Tambahan :  
+   1. Wordpress untuk membuat web dengan fungsi umum secara cepat  
+      1. Wordpress untuk pemula \([https://www.youtube.com/watch?v=VM2UPE64GD4&list=PLFLsT6z\_5FzlOlJqYiMHUcRuFkF2fHMRq](https://www.youtube.com/playlist?list=PLFLsT6z_5FzlOlJqYiMHUcRuFkF2fHMRq)\)  
       2. Design halaman web \(pages\) secara profesional \([https://www.youtube.com/watch?v=SOT\_k4a-A50](https://www.youtube.com/watch?v=SOT_k4a-A50)\)
 
 
