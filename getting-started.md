@@ -37,8 +37,6 @@ Tidak perlu menguasai seluruh fitur diatas. Diharuskan menguasai 8 fitur, dianta
 7. Template literals
 8. Promises
 
-
-
 ##### Let + Const
 
 ```js
@@ -52,11 +50,9 @@ console.log(x);
 }
 
 console.log(x); // 2
-
 ```
 
 ```js
-
 let x = 1;
 
 if (x === 1) {
@@ -70,8 +66,6 @@ console.log(x); // 1
 ```
 
 ```js
-
-
 const number = 42;
 number = 100; // Uncaught TypeError: Assignment to constant variable.
 ```
@@ -127,8 +121,6 @@ let studentName = {
 
 const firstName = studentName.firstName;
 const lastName = studentName.lastName;
-
-
 ```
 
 ES6:
@@ -201,8 +193,6 @@ const theString = `${firstName} ${lastName}, ${teamName}`
 
 console.log(theString)
 ```
-
-
 
 
 
