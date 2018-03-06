@@ -6,7 +6,7 @@ Anda telah membuat aplikasi **Laravel** baru untuk klien Anda dan sudah _**deplo
 
 Tapi bagaimana jika Anda mendapatkan dengan cepat mendapatkan notifikasi e-mail tentang bug dan anda dapat memperbaikinya secepatnya. Di Laravel, ini bisa dilakukan dengan mudah.
 
-Di Laravel,  semua _**exceptions**_ oleh App\Exceptions\Handler _class_. _Class_ ini berisi dua _method_: _report_ dan _render_. kita akan fokus pada _report method, \_Ini digunakan untuk mencatat_ exceptions_ atau mengirimnya ke \_external service_ seperti _Bugsnag_ atau _Sentry. _Secara _default_, report method _hanya melewati_ exceptions_ ke \_base class_ dimana _exceptions_ dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke developer _tentang exceptions tersebut_. Cara menggunakannya seperti dibawah ini:
+Di Laravel,  semua **`exceptions`** oleh `App\Exceptions\Handler` **Class**. **Class** ini berisi dua method: **`report`**dan **`render`**. kita akan fokus pada **`report`**, Ini digunakan untuk mencatat **`exceptions`** atau mengirimnya ke **`external service`** seperti Bugsnag atau Sentry. Secara **`default`**, **`report`** hanya melewati **`exceptions`** ke **`base class`** dimana **`exceptions`** dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke **`developer`** tentang **`exceptions`** tersebut. Cara menggunakannya seperti dibawah ini:
 
 ```php
 /**
@@ -38,216 +38,86 @@ public function sendEmail(Exception $exception)
 }
 ```
 
-disini kita menggunakan
+Di sini kita menggunakan metode shouldReport untuk mengabaikan pengecualian yang tercantum dalam properti  $dontReport dari handler exceptions.
 
-Each type of email sent by the application is represented as a “mailable” class in Laravel. So, we need to create our mailable class using the`make:mail`command:
+Setiap email yang dikirim aplikasi direpresentasikan sebagai “mailable” class in Laravel. jadi kita perlu untuk membuat mailable class dengan menggunakan command`make:mail`:
 
 ```
 $ php artisan make:mail ExceptionOccured
 ```
 
-This will create a class`ExceptionOccured`in the`app/Mail`directory.
+Ini akan membuat class`ExceptionOccured`di dalam direktori`app/Mail`.
 
-Merely sending the mail will not solve the problem. We need the full stack trace of the exception. And for that, we can use the Symfony’s Debug component.
+Dengan hanya mengirim email tidak akan menyelesaikan masalah. Kita membutuhkan full stack trace dari exceptions. Dan untuk itu, kita bisa menggunakan komponen Debug milik Symfony.
 
-```
-public
-function
-sendEmail
-(Exception $exception)
+```php
+public function sendEmail(Exception $exception)
 {
-
-try
- {
+    try {
         $e = FlattenException::create($exception);
 
-        $handler = 
-new
- SymfonyExceptionHandler();
+        $handler = new SymfonyExceptionHandler();
 
-        $html = $handler-
->
-getHtml($e);
+        $html = $handler->getHtml($e);
 
-        Mail::to(
-'developer@gmail.com'
-)-
->
-send(
-new
- ExceptionOccured($html));
-    } 
-catch
- (
-Exception
- $ex) {
+        Mail::to('developer@gmail.com')->send(new ExceptionOccured($html));
+    } catch (Exception $ex) {
         dd($ex);
     }
 }
 ```
 
-Make sure you add the following code at the top of the file:
+Pastikan anda menambahkan kode dibawah ini diatas file:
 
-```
-use
-Mail
-;
-
-use
-Symfony
-\
-Component
-\
-Debug
-\
-Exception
-\
-FlattenException
-;
-
-use
-Symfony
-\
-Component
-\
-Debug
-\
-ExceptionHandler
-as
-SymfonyExceptionHandler
-;
-
-use
-App
-\
-Mail
-\
-ExceptionOccured
-;
+```php
+use Mail;
+use Symfony\Component\Debug\Exception\FlattenException;
+use Symfony\Component\Debug\ExceptionHandler as SymfonyExceptionHandler;
+use App\Mail\ExceptionOccured;
 ```
 
-_Note—We have used the_`try`_block to avoid the infinite loop if the mail command fails._
+lalu, dalam`ExceptionOccured`mailer class:
 
-Then, in your`ExceptionOccured`mailer class:
+```php
+<?php
 
-```
-<
-?php
-namespace
-App
-\
-Mail
-;
+namespace App\Mail;
 
+use Illuminate\Bus\Queueable;
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
-use
-Illuminate
-\
-Bus
-\
-Queueable
-;
-
-use
-Illuminate
-\
-Mail
-\
-Mailable
-;
-
-use
-Illuminate
-\
-Queue
-\
-SerializesModels
-;
-
-use
-Illuminate
-\
-Contracts
-\
-Queue
-\
-ShouldQueue
-;
-
-
-class
-ExceptionOccured
-extends
-Mailable
+class ExceptionOccured extends Mailable
 {
+    use Queueable, SerializesModels;
 
-use
-Queueable
-, 
-SerializesModels
-;
-
-
-/**
+    /**
      * The body of the message.
      *
-     * 
-@var
- string
+     * @var string
      */
-public
- $content;
+    public $content;
 
-
-/**
+    /**
      * Create a new message instance.
      *
-     * 
-@return
- void
+     * @return void
      */
-public
-function
-__construct
-($content)
-{
-
-$this
--
->
-content = $content;
+    public function __construct($content)
+    {
+        $this->content = $content;
     }
 
-
-/**
+    /**
      * Build the message.
      *
-     * 
-@return
- $this
+     * @return $this
      */
-public
-function
-build
-()
-{
-
-return
-$this
--
->
-view(
-'emails.exception'
-)
-                    -
->
-with(
-'content'
-, 
-$this
--
->
-content);
+    public function build()
+    {
+        return $this->view('emails.exception')
+                    ->with('content', $this->content);
     }
 }
 ```
@@ -255,9 +125,7 @@ content);
 Add the following code in your`emails.exception`view file:
 
 ```
-{!! 
-$content
- !!}
+{!! $content !!}
 ```
 
 Now, whenever an exception is thrown in your application, you will receive an email with full stack trace. Cool!
