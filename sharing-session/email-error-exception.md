@@ -2,9 +2,11 @@
 
 #### _by Abdul Alim_
 
-Dalam proses **web development** menggunakan **laravel** tentu kita sering menemui **error exception**, **error exception** itu berguna dalam proses _debug_ atau mencari _bug_ yang harus kita benarkan. tetapi kadang ketika sebuat project dalam _environment production _dalam proses fix bug harus dilakukan dengan cepat, permasalahannya kita belum tentu selalu tahu apakah dalam production terdapat error exception, maka dari itu perlu sebuah pencatatan error exception atau hal lain seperti itu. hal yang sering dilakukan kebanyakan _web developer _adalah mengirim error exception dari production ke email.
+Anda telah membuat aplikasi **Laravel** baru untuk klien Anda dan sudah _**deploy**_ aplikasi tersebut di _**production server**_. Semuanya bekerja dengan baik sampai customer/klien anda memiliki masalah dengan aplikasi karena bug atau error. hal ini tidak masalah jika anda sebagai web developer memperbaikinya dengan cepat, tetapi jika tidak klien/customer akan meninggalkan aplikasi tersebut.
 
-Dalam laravel terdapat handler error exception, dan disimpan di App\Exceptions\Handler class. dan kita dapat mengirim email error exception melalui itu, seperti dibawah ini:
+Tapi bagaimana jika Anda mendapatkan dengan cepat mendapatkan notifikasi e-mail tentang bug dan anda dapat memperbaikinya secepatnya. Di Laravel, ini bisa dilakukan dengan mudah.
+
+Di Laravel,  semua _**exceptions**_ oleh App\Exceptions\Handler _class_. _Class_ ini berisi dua _method_: _report_ dan _render_. kita akan fokus pada _report method, _Ini digunakan untuk mencatat _exceptions_ atau mengirimnya ke _external service_ seperti _Bugsnag_ atau _Sentry. _Secara default, report method hanya melewati _exceptions_ ke _base class_ dimana _exceptions_ dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke developer _tentang exceptions tersebut_. Cara menggunakannya seperti dibawah ini:
 
 ```php
 /**
@@ -36,13 +38,12 @@ public function sendEmail(Exception $exception)
 }
 ```
 
-disini kita menggunakan 
+disini kita menggunakan
 
 Each type of email sent by the application is represented as a “mailable” class in Laravel. So, we need to create our mailable class using the`make:mail`command:
 
 ```
 $ php artisan make:mail ExceptionOccured
-
 ```
 
 This will create a class`ExceptionOccured`in the`app/Mail`directory.
@@ -55,7 +56,7 @@ function
 sendEmail
 (Exception $exception)
 {
-    
+
 try
  {
         $e = FlattenException::create($exception);
@@ -83,7 +84,6 @@ Exception
         dd($ex);
     }
 }
-
 ```
 
 Make sure you add the following code at the top of the file:
@@ -124,10 +124,9 @@ Mail
 \
 ExceptionOccured
 ;
-
 ```
 
-_Note—We have used the`try`block to avoid the infinite loop if the mail command fails._
+_Note—We have used the_`try`_block to avoid the infinite loop if the mail command fails._
 
 Then, in your`ExceptionOccured`mailer class:
 
@@ -181,14 +180,14 @@ ExceptionOccured
 extends
 Mailable
 {
-    
+
 use
 Queueable
 , 
 SerializesModels
 ;
 
-    
+
 /**
      * The body of the message.
      *
@@ -199,7 +198,7 @@ SerializesModels
 public
  $content;
 
-    
+
 /**
      * Create a new message instance.
      *
@@ -212,14 +211,14 @@ function
 __construct
 ($content)
 {
-        
+
 $this
 -
 >
 content = $content;
     }
 
-    
+
 /**
      * Build the message.
      *
@@ -232,7 +231,7 @@ function
 build
 ()
 {
-        
+
 return
 $this
 -
@@ -251,7 +250,6 @@ $this
 content);
     }
 }
-
 ```
 
 Add the following code in your`emails.exception`view file:
@@ -260,7 +258,6 @@ Add the following code in your`emails.exception`view file:
 {!! 
 $content
  !!}
-
 ```
 
 Now, whenever an exception is thrown in your application, you will receive an email with full stack trace. Cool!
