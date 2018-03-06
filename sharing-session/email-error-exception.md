@@ -6,7 +6,7 @@ Anda telah membuat aplikasi **Laravel** baru untuk klien Anda dan sudah _**deplo
 
 Tapi bagaimana jika Anda mendapatkan dengan cepat mendapatkan notifikasi e-mail tentang bug dan anda dapat memperbaikinya secepatnya. Di Laravel, ini bisa dilakukan dengan mudah.
 
-Di Laravel,  semua **`exceptions`** oleh `App\Exceptions\Handler` **Class**. **Class** ini berisi dua method: **`report`**dan **`render`**. kita akan fokus pada **`report`**, Ini digunakan untuk mencatat **`exceptions`** atau mengirimnya ke **`external service`** seperti Bugsnag atau Sentry. Secara **`default`**, **`report`** hanya melewati **`exceptions`** ke **`base class`** dimana **`exceptions`** dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke **`developer`** tentang **`exceptions`** tersebut. Cara menggunakannya seperti dibawah ini:
+Di Laravel,  semua `exceptions` oleh `App\Exceptions\Handler` **Class**. **Class** ini berisi dua method: `report`dan `render`. kita akan fokus pada `report`, Ini digunakan untuk mencatat `exceptions` atau mengirimnya ke `external service` seperti Bugsnag atau Sentry. Secara `default`, `report` hanya melewati `exceptions` ke `base class` dimana `exceptions` dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke `developer` tentang `exceptions` tersebut. Cara menggunakannya seperti dibawah ini:
 
 ```php
 /**
@@ -122,11 +122,15 @@ class ExceptionOccured extends Mailable
 }
 ```
 
-Add the following code in your`emails.exception`view file:
+Tambahkan kode berikut di file`emails.exception`dalam view:
 
 ```
 {!! $content !!}
 ```
 
-Now, whenever an exception is thrown in your application, you will receive an email with full stack trace. Cool!
+Now, kapanpun exception dikeluarkan dalam aplikasi anda, anda akan menerima  email dengan full stack trace nya.
+
+
+
+Referensi : https://laravel-news.com/email-on-error-exceptions
 
