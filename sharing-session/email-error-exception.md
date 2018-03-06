@@ -6,7 +6,7 @@ Anda telah membuat aplikasi **Laravel** baru untuk klien Anda dan sudah _**deplo
 
 Tapi bagaimana jika Anda mendapatkan dengan cepat mendapatkan notifikasi e-mail tentang bug dan anda dapat memperbaikinya secepatnya. Di Laravel, ini bisa dilakukan dengan mudah.
 
-Di Laravel,  semua _**exceptions**_ oleh App\Exceptions\Handler _class_. _Class_ ini berisi dua _method_: _report_ dan _render_. kita akan fokus pada _report method, _Ini digunakan untuk mencatat _exceptions_ atau mengirimnya ke _external service_ seperti _Bugsnag_ atau _Sentry. _Secara default, report method hanya melewati _exceptions_ ke _base class_ dimana _exceptions_ dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke developer _tentang exceptions tersebut_. Cara menggunakannya seperti dibawah ini:
+Di Laravel,  semua _**exceptions**_ oleh App\Exceptions\Handler _class_. _Class_ ini berisi dua _method_: _report_ dan _render_. kita akan fokus pada _report method, _Ini digunakan untuk mencatat_ exceptions_ atau mengirimnya ke _external service_ seperti _Bugsnag_ atau _Sentry. _Secara_ default, report method _hanya melewati_ exceptions_ ke _base class_ dimana _exceptions_ dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke developer _tentang exceptions tersebut_. Cara menggunakannya seperti dibawah ini:
 
 ```php
 /**
