@@ -128,9 +128,7 @@ Tambahkan kode berikut di file`emails.exception`dalam view:
 {!! $content !!}
 ```
 
-Now, kapanpun exception dikeluarkan dalam aplikasi anda, anda akan menerima  email dengan full stack trace nya.
+Sekarang, kapanpun exception dikeluarkan dalam aplikasi anda, anda akan menerima  email dengan full stack trace nya.
 
-
-
-Referensi : https://laravel-news.com/email-on-error-exceptions
+Referensi : [https://laravel-news.com/email-on-error-exceptions](https://laravel-news.com/email-on-error-exceptions)
 
