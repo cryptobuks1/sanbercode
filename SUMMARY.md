@@ -13,7 +13,7 @@
   * [Email Error Exception](sharing-session/email-error-exception.md)
   * [Membuat template di laravel](sharing-session/membuat-template-di-laravel.md)
   * [Menggunakan Faker](sharing-session/database-faker-factory.md)
-  * Membuat Animasi Sederhana Menggunakan jquery.parallax-scroll
+  * [Membuat Animasi Sederhana Menggunakan jquery.parallax-scroll](sharing-session/membuat-animasi-sederhana-menggunakan-jqueryparallax-scroll.md)
 
 ## Mobile Apps Development
 
