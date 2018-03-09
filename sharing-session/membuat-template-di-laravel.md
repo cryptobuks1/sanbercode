@@ -11,22 +11,23 @@ Persiapkan project Laravel, kemudian kita buat satu file di dalam direktori `res
 ```
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Belajar Template Laravel</title>
-	</head>
-	<body>
-		<ul>
-			@section('sidebar')
-			  <li>HTML</li>
-			  <li>CSS</li>
-			  <li>JS</li>
-			@show
-		</ul>
-		<div class="container">
-			@yield('content')
-		</div>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar Template Laravel</title>
+    </head>
+    <body>
+        <div class ="navbar">
+        @include('partials.header)
+        </div>
+        
+        <div class="container">
+            @yield('content')
+        </div>
+        
+        <div class="footer">
+            @include('partials.footer')
+        </div>
+    </body>
 </html>
 ```
 
