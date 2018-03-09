@@ -6,7 +6,7 @@ Sistem Templating laravel telah dirancang sedemikian rupa yang akan memudahkan k
 
 ## Layout
 
-Persiapkan project Laravel, kemudian kita buat satu file di dalam direktori `resources/views/layouts`dengan nama`template.blade.php` , dan tulislah code dibawah:
+Persiapkan project Laravel, kemudian kita buat satu file di dalam direktori `resources/views/layouts`dengan nama`template.blade.php`  dan siapkan juga direktori `resources/views/partials` untuk wadah `header.blade.php`, `sidebar.blade.php`,  serta `footer.blade.php `jika semua itu sudah disiapkan, maka kalian bisa melakukan layouting, seperti code dibawah
 
 ```
 <!DOCTYPE html>
@@ -19,11 +19,12 @@ Persiapkan project Laravel, kemudian kita buat satu file di dalam direktori `res
         <div class ="navbar">
         @include('partials.header)
         </div>
+        @include('partials.sidebar)
         
         <div class="container">
             @yield('content')
         </div>
-        
+
         <div class="footer">
             @include('partials.footer')
         </div>
