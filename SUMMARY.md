@@ -11,6 +11,7 @@
   * [Upload File](sharing-session/upload-file.md)
   * [Manipulasi Tanggal Menggunakan Carbon PHP](sharing-session/manipulasi-tanggal-menggunakan-carbon-php.md)
   * [Email Error Exception](sharing-session/email-error-exception.md)
+  * [Membuat Template di laravel](sharing-session/membuat-template-di-laravel.md)
 
 ## Mobile Apps Development
 
