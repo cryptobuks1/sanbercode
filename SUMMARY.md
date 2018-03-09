@@ -12,6 +12,8 @@
   * [Manipulasi Tanggal Menggunakan Carbon PHP](sharing-session/manipulasi-tanggal-menggunakan-carbon-php.md)
   * [Email Error Exception](sharing-session/email-error-exception.md)
   * [Membuat template di laravel](sharing-session/membuat-template-di-laravel.md)
+  * [Menggunakan Faker](sharing-session/database-faker-factory.md)
+  * Membuat Animasi Sederhana Menggunakan jquery.parallax-scroll
 
 ## Mobile Apps Development
 
