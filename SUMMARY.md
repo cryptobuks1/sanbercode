@@ -12,6 +12,8 @@
   * [Manipulasi Tanggal Menggunakan Carbon PHP](sharing-session/manipulasi-tanggal-menggunakan-carbon-php.md)
   * [Email Error Exception](sharing-session/email-error-exception.md)
   * [Membuat template di laravel](sharing-session/membuat-template-di-laravel.md)
+  * [Membuat Middleware Sendiri](membuat-middleware-sendiri.md)
+  * [Tambahan : Kapan Membuat Middleware?](sharing-session/tambahan-kapan-membuat-middleware.md)
 
 ## Mobile Apps Development
 
