@@ -37,6 +37,10 @@ public function functionName(Request $request)
             $input['file-x'] = $uploadPath . '/' . $fileName;
 
     }
+    
+    // create data baru, contohnya menggunakan menggunakan Model Article
+    Article::create($input);
+    
 
 }
 ```
