@@ -11,6 +11,10 @@ Ada 2 cara untuk upload file :
 
 public function functionName(Request $request)
 {
+
+    // masukkan semua isian form (request) ke dalam variabel input
+    $input = $request->all();
+
     // cek apakah ada input dengan type file yang memiliki atribut name="file-x"
     if ($request->hasFile('file-x')) 
     {
@@ -29,8 +33,8 @@ public function functionName(Request $request)
             // ambil file yang sudah diberi nama dan simpan ke tempat yg sudah diset sebelumnya
             $file->move($uploadPath, $fileName);
 
-            // set kembali agar nama file masuk dalam array $request dari form 
-            $request['file-x'] = $fileName;
+            // set di variabel $input agar memiliki atribut 'file-x' yang berupa path + filename  
+            $input['file-x'] = $uploadPath . '/' . $fileName;
 
     }
 
