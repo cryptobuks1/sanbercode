@@ -95,13 +95,12 @@ class Welcome extends React.Component {
 untuk render sebuah component dapat menggunakan cara :
 
 ```js
-
   ReactDOM.render(<Welcome />, document.getElementById('root'));
-  
+
   // Or
-  
+
   const Welcome = <Welcome />
-  
+
   ReactDOM.render(Welcome, document.getElementById('root'));
 ```
 
@@ -130,5 +129,94 @@ ReactDOM.render(
 );
 ```
 
+#### Adding State to Component
 
+State juga property dari component. Perbedaan **Props **dan **State **adalah State mutable atau bisa diubah, tapi tidak bisa di gunakan untuk component lain.
+
+```js
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+```
+
+#### React Lifecycle
+
+Lifecycle adalah method dari sebuah component untuk mengetahui fase dari sebuah aplikasi.
+
+```js
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+  
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+```
+
+#### constructor\(\)
+
+constructor adalah hal pertama yang dibaca sebuah **component**. Dari source code pertama constructor membawa argument props dari luar component dan initial state dalam sebuah **component.**
+
+#### render\(\)
+
+fase ini dieksekusi untuk menampilkan tag JSX.
+
+#### componentDidMount\(\)
+
+**`componentDidMount `**adalah fase yang eksekusi setelah **render\(\)**. Dari source code diatas, setelah component ditampilkan. Maka state akan diupdate berdasarkan function **this.tick\(\)**.
+
+#### componentWillUnmount\(\)
+
+**componentWillUnmount **adalah fase yang dieksekusi saat component di hapus dari **DOM**.
+
+### Do Not Modify State Directly {#do-not-modify-state-directly}
+
+```js
+// Wrong
+this.state.comment = 'Hello';
+```
+
+```js
+// Correct
+this.setState({comment: 'Hello'});
+```
+
+**Note: State Updates May Be Asynchronous**
 
