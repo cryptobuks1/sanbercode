@@ -17,7 +17,7 @@ berikut adalah rekomendasi tutorial yang disusun berdasarkan pengalaman mencoba 
    1. Basic Laravel \([https://www.youtube.com/playlist?list=PLCZlgfAG0GXDijjesNoqcCmuYpQSbpucl](https://www.youtube.com/playlist?list=PLCZlgfAG0GXDijjesNoqcCmuYpQSbpucl)\) **\*updated**  
    2. \[Baca dan Dipahami\] Relasi Database dengan laravel \([https://daylerees.com/codebright-eloquent-relationships/](https://daylerees.com/codebright-eloquent-relationships/)\)  
    3. Membuat database relationship \([https://www.youtube.com/playlist?list=PLfdtiltiRHWEb-tzSN99Zy-39Y1tKl5DB](https://www.youtube.com/playlist?list=PLfdtiltiRHWEb-tzSN99Zy-39Y1tKl5DB)\)  
-   4. Build API with laravel \([https://www.youtube.com/playlist?list=PLEgI20pG1DqyueOv\_hY4F7t1qRUS\_X4Ny](https://www.youtube.com/playlist?list=PLEgI20pG1DqyueOv_hY4F7t1qRUS_X4Ny)\)  
+   4. Laravel 5.5 New Features \([https://www.youtube.com/results?search\_query=laravel+5.5+tutorial](https://www.youtube.com/results?search_query=laravel+5.5+tutorial)\)  
    5. Dokumentasi API Laravel menggunakan swagger \([https://medium.com/@mahbubkabir/discovering-swagger-in-laravel-rest-apis-cb0271c8f2](https://medium.com/@mahbubkabir/discovering-swagger-in-laravel-rest-apis-cb0271c8f2)\)
 
    ---
