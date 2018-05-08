@@ -86,5 +86,5 @@ jika code diatas sudah aplikasikan/terapkan maka cek folder `config`maka akan te
 
 ### Step 4
 
-Buat database di Oracle yang sebelumnya kalian install
+Buat database pada Oracle yang sebelumnya kalian install:
 
