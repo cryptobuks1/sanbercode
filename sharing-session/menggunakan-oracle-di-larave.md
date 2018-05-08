@@ -1,4 +1,4 @@
-# Menggunakan Oracle di Laravel
+* # Menggunakan Oracle di Laravel
 
 #### 08/Mei/2018 \(By: Andrika\)
 
@@ -6,8 +6,8 @@
 
 Untuk mengintegrasikan laravel dengan oracle, saran saya menggunakan laravel versi 5.4 atau 5.3, karena sedikit sekali permasalahan yang kalian akan jumpai nantinya ketika mengistall package dari Mas Yajra \( [https://yajrabox.com/ ](https://yajrabox.com/)\). Hal yang harus kalian lakukan adalah mempersiapkan tools yang dibutuhkan pastinya, cek link dibawah:
 
-1. Oracle : [http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
-2. Untuk lebih mengoptimalkan oracle Download Sql Developer : [http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
+* Oracle : [http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
+* Untuk lebih mengoptimalkan oracle Download Sql Developer : [http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
 
 Keterangan:
 
@@ -71,6 +71,17 @@ jika code diatas sudah aplikasikan/terapkan maka cek folder config maka akan ter
     'prefix'        => env('DB_PREFIX', ''),
     'prefix_schema' => env('DB_SCHEMA_PREFIX', ''),
 ],
+```
+
+* Terakhir buka file auth.php yang ada pado folder config kemudian ubah eloquent menjadi oracle seperti code dibawah:
+
+```
+'providers' => [
+    'users' => [
+        'driver' => 'oracle',
+        'model' => App\User::class,
+    ],
+]
 ```
 
 
