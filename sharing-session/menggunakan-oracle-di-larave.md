@@ -56,5 +56,22 @@ Jika sesuai dengan perintah yang diatas artinya package dari yajra sudah berhasi
 php artisan vendor:publish --tag=oracle
 ```
 
+jika code diatas sudah aplikasikan/terapkan maka cek folder config maka akan terdapat file oracle.php, seperti contoh yang dibawah:
+
+```
+'oracle' => [
+    'driver'        => 'oracle',
+    'tns'           => env('DB_TNS', ''),
+    'host'          => env('DB_HOST', ''),
+    'port'          => env('DB_PORT', '1521'),
+    'database'      => env('DB_DATABASE', ''),
+    'username'      => env('DB_USERNAME', ''),
+    'password'      => env('DB_PASSWORD', ''),
+    'charset'       => env('DB_CHARSET', 'AL32UTF8'),
+    'prefix'        => env('DB_PREFIX', ''),
+    'prefix_schema' => env('DB_SCHEMA_PREFIX', ''),
+],
+```
+
 
 
