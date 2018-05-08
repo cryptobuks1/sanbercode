@@ -11,11 +11,15 @@ Keterangan:
 
 * untuk memudahkan dalam mengisntallnya coba tonton video, cek link ini [https://www.youtube.com/watch?v=Fr4pPlZnbFI&t=384s](https://www.youtube.com/watch?v=Fr4pPlZnbFI&t=384s)
 
-Jika sudah dilakukan semua \*saran yang diatas, kalian bisa langsung mengaplikasikan oracle pada laravel dengan  menggunakan package yajra \([https://github.com/yajra/laravel-oci8](https://github.com/yajra/laravel-oci8)\).
+Sebelum mencoba, setting terlebih dahulu xampp untuk memudahkan menjalankan package yajra di project kalian:
 
+* buka php.ini di folder xampp atau bisa mengikuti gambar dibawah
 
+![](/assets/import.png)
 
+* kemudian cari extension=php\__oci8\__12c.dll kemudian hapus ; \(titik koma\)
 
+![](/assets/php_ini.png)
 
-
+Jika sudah dilakukan semua \*saran yang diatas, kalian bisa langsung mengaplikasikan oracle pada laravel dengan  menggunakan package yajra \([https://github.com/yajra/laravel-oci8](https://github.com/yajra/laravel-oci8)\). 
 
