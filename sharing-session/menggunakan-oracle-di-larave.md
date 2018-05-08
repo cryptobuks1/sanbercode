@@ -44,11 +44,17 @@ Jika sesuai dengan perintah yang diatas artinya package dari yajra sudah berhasi
 
 ![](/assets/composer_json.png)
 
-* Kemudian  buka  `config/app.php ` pada file app.php  cari providers dan copy-kan code yang dibawah
+* Kemudian  buka  `config/app.php` pada file app.php  cari providers dan copy-kan code yang dibawah
 
 > Yajra\Oci8\Oci8ServiceProvider::class,
 
 ![](/assets/app.php.png)
+
+* kemudian buat koneksi konfigurasi untuk oracle, menggunakan code dibawah:
+
+```
+php artisan vendor:publish --tag=oracle
+```
 
 
 
