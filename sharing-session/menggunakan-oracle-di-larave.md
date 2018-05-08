@@ -25,5 +25,7 @@ Sebelum mencoba, setting terlebih dahulu xampp untuk memudahkan menjalankan pack
 
 ![](/assets/php_ini.png)
 
+* Download instantclient\_12\_2 di link 
+
 Jika sudah dilakukan semua \*saran yang diatas, kalian bisa langsung mengaplikasikan oracle pada laravel dengan  menggunakan package yajra \([https://github.com/yajra/laravel-oci8](https://github.com/yajra/laravel-oci8)\).
 
