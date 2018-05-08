@@ -32,13 +32,23 @@ Sebelum mencoba, setting terlebih dahulu xampp untuk memudahkan menjalankan pack
 
 Jika sudah dilakukan semua \*saran yang diatas, kalian bisa langsung mengaplikasikan oracle pada laravel dengan  menggunakan package yajra \([https://github.com/yajra/laravel-oci8](https://github.com/yajra/laravel-oci8)\). Project yang saya gunakan disini versi 5.4
 
-1. Buka project laravel kamu di command prompt, kemudian masukkan code berikut :
+* Buka project laravel kamu di command prompt, kemudian masukkan code berikut :
 
 ```
 composer require yajra/laravel-oci8:"5.4.*"
 ```
 
+![](/assets/composer_yajra.png)
 
+Jika sesuai dengan perintah yang diatas artinya package dari yajra sudah berhasil terinstall , untuk mengeceknya lihat di `composer.json`
+
+![](/assets/composer_json.png)
+
+* Kemudian  buka  `config/app.php ` pada file app.php  cari providers dan copy-kan code yang dibawah
+
+> Yajra\Oci8\Oci8ServiceProvider::class,
+
+![](/assets/app.php.png)
 
 
 
