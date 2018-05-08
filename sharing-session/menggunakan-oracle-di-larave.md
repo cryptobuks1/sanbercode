@@ -7,13 +7,11 @@ Untuk mengintegrasikan laravel dengan oracle, saran saya menggunakan laravel ver
 1. Oracle : [http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
 2. Untuk lebih mengoptimalkan oracle Download Sql Developer : [http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
 
-Keterangan: 
+Keterangan:
 
 * untuk memudahkan dalam mengisntallnya coba tonton video, cek link ini [https://www.youtube.com/watch?v=Fr4pPlZnbFI&t=384s](https://www.youtube.com/watch?v=Fr4pPlZnbFI&t=384s)
 
-Jika sudah dilakukan semua \*saran yang diatas, kalian bisa langsung mengaplikasikannya oracle pada laravel dengan bantuan dari package yajra 
-
-
+Jika sudah dilakukan semua \*saran yang diatas, kalian bisa langsung mengaplikasikannya oracle pada laravel dengan bantuan dari package yajra \([https://yajrabox.com/docs/laravel-oci8/master](https://yajrabox.com/docs/laravel-oci8/master)\).
 
 
 
