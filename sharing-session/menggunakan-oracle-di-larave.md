@@ -26,7 +26,7 @@ Sebelum mencoba, setting terlebih dahulu xampp untuk memudahkan menjalankan pack
 ![](/assets/php_ini.png)
 
 * Download instantclient\_12\_2 di link [http://www.oracle.com/technetwork/database/database-technologies/instant-client/downloads/index.html](http://www.oracle.com/technetwork/database/database-technologies/instant-client/downloads/index.html)
-* Jika sudah mendownloadnya kemudian extract, salin\(copy\) semua isi instantclient\_12\_2 dan salin \(paste\) ke folder C:\xampp\apache\bin.
+* Jika sudah mendownloadnya kemudian extract, salin\(copy\) semua isi yang ada di folder instantclient\_12\_2 dan salin \(paste\) ke folder C:\xampp\apache\bin.
 
 ### Step 2
 
