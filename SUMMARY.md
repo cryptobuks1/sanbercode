@@ -13,7 +13,7 @@
   * [Email Error Exception](sharing-session/email-error-exception.md)
   * [Membuat template di laravel](sharing-session/membuat-template-di-laravel.md)
   * [Menggunakan Faker](sharing-session/database-faker-factory.md)
-  * [Menggunakan Oracle di Larave](sharing-session/menggunakan-oracle-di-larave.md)
+  * [Oracle + Laravel](sharing-session/menggunakan-oracle-di-larave.md)
   * [Membuat Animasi Sederhana Menggunakan jquery.parallax-scroll](sharing-session/membuat-animasi-sederhana-menggunakan-jqueryparallax-scroll.md)
   * [Membuat Middleware Sendiri](membuat-middleware-sendiri.md)
   * [Tambahan : Kapan Membuat Middleware?](sharing-session/tambahan-kapan-membuat-middleware.md)
