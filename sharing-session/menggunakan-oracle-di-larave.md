@@ -1,8 +1,6 @@
-# Menggunakan Oracle di Laravel
+# Menggunakan Oracle di Laravel \(By: Andrika\)
 
-#### 08/Mei/2018 \(By: Andrika\)
-
-
+#### 08/Mei/2018 
 
 
 
