@@ -1,4 +1,4 @@
-* # Menggunakan Oracle di Laravel
+# Menggunakan Oracle di Laravel
 
 #### 08/Mei/2018 \(By: Andrika\)
 
@@ -56,7 +56,7 @@ Jika sesuai dengan perintah yang diatas artinya package dari yajra sudah berhasi
 php artisan vendor:publish --tag=oracle
 ```
 
-jika code diatas sudah aplikasikan/terapkan maka cek folder `config `maka akan terdapat file `oracle.php`, seperti contoh yang dibawah:
+jika code diatas sudah aplikasikan/terapkan maka cek folder `config`maka akan terdapat file `oracle.php`, seperti contoh yang dibawah:
 
 ```
 'oracle' => [
