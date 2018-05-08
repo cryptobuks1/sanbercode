@@ -11,9 +11,7 @@ Keterangan:
 
 * untuk memudahkan dalam mengisntallnya coba tonton video, cek link ini [https://www.youtube.com/watch?v=Fr4pPlZnbFI&t=384s](https://www.youtube.com/watch?v=Fr4pPlZnbFI&t=384s)
 
-Jika sudah dilakukan semua \*saran yang diatas, kalian bisa langsung mengaplikasikannya oracle pada laravel dengan bantuan dari package yajra \([https://yajrabox.com/docs/laravel-oci8/master](https://yajrabox.com/docs/laravel-oci8/master)\).
-
-
+Jika sudah dilakukan semua \*saran yang diatas, kalian bisa langsung mengaplikasikan oracle pada laravel dengan bantuan dari package yajra \([https://yajrabox.com/docs/laravel-oci8/master](https://yajrabox.com/docs/laravel-oci8/master)\).
 
 
 
