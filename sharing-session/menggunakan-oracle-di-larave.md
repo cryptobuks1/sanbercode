@@ -84,5 +84,9 @@ jika code diatas sudah aplikasikan/terapkan maka cek folder config maka akan ter
 ]
 ```
 
+### Step 4
+
+Tes Koneksi 
+
 
 
