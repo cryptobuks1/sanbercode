@@ -1,6 +1,6 @@
 # Tutorial Favorit React js + React Native
 
-Berikut daftar rekomendasi tutorial
+Berikut daftar rekomendasi tutorial..
 
 1. Pelajari Javascript terbaru ES 6 \(ECMA Script 2015\)
    1. Sekolah koding \([https://www.sekolahkoding.com/kelas/belajar-es6](https://www.sekolahkoding.com/kelas/belajar-es6)\)
