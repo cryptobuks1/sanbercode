@@ -20,6 +20,7 @@
 
 ## Mobile Apps Development
 
+* [Tutorial Favorit React](tutorial-favorit-react.md)
 * [Getting Started React](getting-started.md)
   * [Quick Start](getting-started/installation-react-js.md)
 
