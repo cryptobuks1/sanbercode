@@ -15,7 +15,7 @@ Berikut daftar rekomendasi tutorial..
 3. CRUD React Js \([link](https://www.youtube.com/watch?v=S66rHpyU-Eg&list=PLqzyoPcm_VGhKC6hPpSA8Q1gcXxYhAKMO&index=3)\)
 4. React Js + Redux untuk manage state di aplikasi skala menengah-besar \([link](https://www.youtube.com/watch?v=93p3LxR9xfM&index=4&list=PLqzyoPcm_VGhKC6hPpSA8Q1gcXxYhAKMO)\)
 
-### React Native :
+### React Native : 
 
 1. Getting Started React Native \([https://facebook.github.io/react-native/docs/tutorial.html](https://facebook.github.io/react-native/docs/tutorial.html)\)
 2. React Native Basics: Build a Currency Converter \([https://learn.handlebarlabs.com/p/react-native-basics-build-a-currency-converter](https://learn.handlebarlabs.com/p/react-native-basics-build-a-currency-converter)\) =&gt; pelajari module 1-5 dan module 7
