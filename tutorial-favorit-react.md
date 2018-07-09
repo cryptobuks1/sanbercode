@@ -4,6 +4,11 @@ Berikut daftar rekomendasi tutorial..
 
 tutorial disusun berurut dan diasumsikan Anda sudah punya basic Javascript
 
+### Basic JavaScript :
+
+1. [https://www.sekolahkoding.com/kelas/belajar-javascript-untuk-pemula](https://www.sekolahkoding.com/kelas/belajar-javascript-untuk-pemula)
+2. [https://www.sekolahkoding.com/kelas/intro-objek](https://www.sekolahkoding.com/kelas/intro-objek)
+
 ### React Js :
 
 1. Pelajari Javascript terbaru ES 6 \(ECMA Script 2015\)
