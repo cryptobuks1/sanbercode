@@ -23,9 +23,11 @@ tutorial disusun berurut dan diasumsikan Anda sudah punya basic Javascript
 ### React Native :
 
 1. Getting Started React Native \([https://facebook.github.io/react-native/docs/tutorial.html](https://facebook.github.io/react-native/docs/tutorial.html)\)
-2. React Native Basics: Build a Currency Converter \([https://learn.handlebarlabs.com/p/react-native-basics-build-a-currency-converter](https://learn.handlebarlabs.com/p/react-native-basics-build-a-currency-converter)\) =&gt; pelajari module 1-5 dan module 7
+2. React Native Basics: Build a Currency Converter \([https://learn.handlebarlabs.com/p/react-native-basics-build-a-currency-converter](https://learn.handlebarlabs.com/p/react-native-basics-build-a-currency-converter)\), pelajari module 1-5 dan module 7
 
-3. Using API in React Native with redux + redux thunk \([https://www.youtube.com/watch?v=EfzVf4eoJ-c](https://www.youtube.com/watch?v=EfzVf4eoJ-c)\)
+3. Untuk latihan bisa gunakan expo, sedangkan untuk project real, gunakan react-native init \(baca: [https://medium.com/@paulsc/react-native-first-impressions-expo-vs-native-9565cce44c92](https://medium.com/@paulsc/react-native-first-impressions-expo-vs-native-9565cce44c92)\)
+
+4. Using API in React Native with redux + redux thunk \([https://www.youtube.com/watch?v=EfzVf4eoJ-c](https://www.youtube.com/watch?v=EfzVf4eoJ-c)\)
 
 
 

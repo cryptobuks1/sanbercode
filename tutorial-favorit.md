@@ -4,15 +4,16 @@
 
 berikut adalah rekomendasi tutorial yang disusun berdasarkan pengalaman mencoba berbagai sumber latihan :
 
-1. HTML + CSS
-   1. Make a Website \([https://www.codecademy.com/learn/make-a-website](https://www.codecademy.com/learn/make-a-website)\)
-   2. Learn HTML \([https://www.codecademy.com/learn/learn-html](https://www.codecademy.com/learn/learn-html)\)
+1. HTML + CSS  
+   1. Make a Website \([https://www.codecademy.com/learn/make-a-website](https://www.codecademy.com/learn/make-a-website)\)  
+   2. Learn HTML \([https://www.codecademy.com/learn/learn-html](https://www.codecademy.com/learn/learn-html)\)  
    3. Learn CSS \([https://www.codecademy.com/learn/learn-css](https://www.codecademy.com/learn/learn-css)\)
 
    1. tambahan alternatif:
       1. [https://www.sekolahkoding.com/kelas/belajar-html-dari-dasar](https://www.sekolahkoding.com/kelas/belajar-html-dari-dasar)
       2. [https://www.sekolahkoding.com/kelas/belajar-css-dari-dasar](https://www.sekolahkoding.com/kelas/belajar-css-dari-dasar)
    2. CSS Bootstrap \([https://www.sekolahkoding.com/kelas/belajar-menggunakan-bootstrap](https://www.sekolahkoding.com/kelas/belajar-menggunakan-bootstrap)\)
+
 2. PHP
    1. Dasar-dasar PHP \([https://www.sekolahkoding.com/kelas/belajar-php-dari-dasar](https://www.sekolahkoding.com/kelas/belajar-php-dari-dasar)\)
    2. Fungsi dalam PHP \([https://www.sekolahkoding.com/kelas/fungsi-fungsi-php-pada-website](https://www.sekolahkoding.com/kelas/fungsi-fungsi-php-pada-website)\)
