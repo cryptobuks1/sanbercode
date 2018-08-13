@@ -1,4 +1,4 @@
-## Menggunakan _Sweet Alert_ pada _Laravel_
+# Menggunakan Sweet Alert pada Laravel
 
 **9 Februari 2017 by Andrika**
 
@@ -6,31 +6,29 @@ Kalian pasti pernah menggunakan aplikasi? khususnya \(_Website_\). Pernah tidak 
 
 Jika tidak, ayo mulai memikirkannya, dan belajar membuatnya
 
-### _Sweet Alert_
+## _Sweet Alert_
 
-Yup, kalian pasti sudah tau kan apa itu_ Sweet Alert_ ? Oke, Saya Jelaskan. \_Sweet  Alert \_adalah sebuah alert \(Notifikasi\) yang** **sudah di design menarik dan mudah untuk digunakan. Referensi: [packagist.org](https://packagist.org/packages/uxweb/sweet-alert)
+Yup, kalian pasti sudah tau kan apa itu _Sweet Alert_ ? Oke, Saya Jelaskan. \_Sweet Alert \_adalah sebuah alert \(Notifikasi\) yang ****sudah di design menarik dan mudah untuk digunakan. Referensi: [packagist.org](https://packagist.org/packages/uxweb/sweet-alert)
 
 Langsung aja kali ya"
 
 Langkah pertama siapakan Composer bisa di download pada link [ http://gitcomposer.org ](https://getcomposer.org)
 
-```
+```text
 composer require uxweb/sweet-alert
 ```
 
-```
+```text
 UxWeb\SweetAlert\SweetAlertServiceProvider::class,
 ```
 
-```
+```text
 UxWeb\SweetAlert\SweetAlertServiceProvider::class,
 ```
 
-```
+```text
 <link rel="stylesheet" href="{{ url('sweetalert/sweetalert.min.css') }}">
 ...
 <script src="{{ url('sweetalert/sweetalert.min.js') }}"></script>
 ```
-
-
 

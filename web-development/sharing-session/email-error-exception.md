@@ -1,12 +1,12 @@
-# Mengirim Email Error Exception
+# Email Error Exception
 
-#### _by Abdul Alim_
+## _by Abdul Alim_
 
 Anda telah membuat aplikasi **Laravel** baru untuk klien Anda dan sudah _**deploy**_ aplikasi tersebut di _**production server**_. Semuanya bekerja dengan baik sampai customer/klien anda memiliki masalah dengan aplikasi karena bug atau error. hal ini tidak masalah jika anda sebagai web developer memperbaikinya dengan cepat, tetapi jika tidak klien/customer akan meninggalkan aplikasi tersebut.
 
 Tapi bagaimana jika Anda mendapatkan dengan cepat mendapatkan notifikasi e-mail tentang bug dan anda dapat memperbaikinya secepatnya. Di Laravel, ini bisa dilakukan dengan mudah.
 
-Di Laravel,  semua `exceptions` oleh `App\Exceptions\Handler` **Class**. **Class** ini berisi dua method: `report`dan `render`. kita akan fokus pada `report`, Ini digunakan untuk mencatat `exceptions` atau mengirimnya ke `external service` seperti Bugsnag atau Sentry. Secara `default`, `report` hanya melewati `exceptions` ke `base class` dimana `exceptions` dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke `developer` tentang `exceptions` tersebut. Cara menggunakannya seperti dibawah ini:
+Di Laravel, semua `exceptions` oleh `App\Exceptions\Handler` **Class**. **Class** ini berisi dua method: `report`dan `render`. kita akan fokus pada `report`, Ini digunakan untuk mencatat `exceptions` atau mengirimnya ke `external service` seperti Bugsnag atau Sentry. Secara `default`, `report` hanya melewati `exceptions` ke `base class` dimana `exceptions` dicatat. Namun, kita bisa menggunakannya untuk mengirim email ke `developer` tentang `exceptions` tersebut. Cara menggunakannya seperti dibawah ini:
 
 ```php
 /**
@@ -38,11 +38,11 @@ public function sendEmail(Exception $exception)
 }
 ```
 
-Di sini kita menggunakan metode shouldReport untuk mengabaikan pengecualian yang tercantum dalam properti  $dontReport dari handler exceptions.
+Di sini kita menggunakan metode shouldReport untuk mengabaikan pengecualian yang tercantum dalam properti $dontReport dari handler exceptions.
 
 Setiap email yang dikirim aplikasi direpresentasikan sebagai “mailable” class in Laravel. jadi kita perlu untuk membuat mailable class dengan menggunakan command`make:mail`:
 
-```
+```text
 $ php artisan make:mail ExceptionOccured
 ```
 
@@ -124,11 +124,11 @@ class ExceptionOccured extends Mailable
 
 Tambahkan kode berikut di file`emails.exception`dalam view:
 
-```
+```text
 {!! $content !!}
 ```
 
-Sekarang, kapanpun exception dikeluarkan dalam aplikasi anda, anda akan menerima  email dengan full stack trace nya.
+Sekarang, kapanpun exception dikeluarkan dalam aplikasi anda, anda akan menerima email dengan full stack trace nya.
 
 Referensi : [https://laravel-news.com/email-on-error-exceptions](https://laravel-news.com/email-on-error-exceptions)
 

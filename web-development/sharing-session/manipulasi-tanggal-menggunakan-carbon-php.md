@@ -13,7 +13,7 @@ kedua contoh ini tentu kurang _user friendly_ untuk ditampilkan di front-end web
 
 Nah, berikut beberapa trik pengaturan tanggal menggunakan **Carbon**
 
-### Ubah Format dalam Bahasa Indonesia
+## Ubah Format dalam Bahasa Indonesia
 
 jangan lupa untuk memanggil library carbon
 
@@ -45,10 +45,8 @@ $ConvertedDate3 = Carbon::parse($created_at)->formatLocalized('%d %b %y');
 catatan :
 
 * **%d** untuk menampilkan tanggal \(tidak termasuk bulan dan tahun\)
-* **%B **menampilkan bulan dalam versi lengkap, **%b **menampilkan bulan dalam versi ringkas \(misal: jan, des, feb, dst..\)
-* **%Y **menampilkan tahun dalam versi lengkap, **%y **menampilkan tahun dalam versi ringkas \(misal: 2016 =&gt; ditulis hanya 16\)
-* **%H **menampilkan jam \(Hours\), **%M **menampilkan menit \(minutes\)
-* Kita dapat menambahkan string apa saja misal 'WIB', tanda '**:' **diantara jam dan menit, dsb.. intinya didalam fungsi formatLocalized\(\), secara otomatis akan mengubah variabel yang dikenali, yaitu huruf yang sebelumnya menggunakan tanda '%'  ** ** 
-
-
+* **%B** menampilkan bulan dalam versi lengkap, **%b** menampilkan bulan dalam versi ringkas \(misal: jan, des, feb, dst..\)
+* **%Y** menampilkan tahun dalam versi lengkap, **%y** menampilkan tahun dalam versi ringkas \(misal: 2016 =&gt; ditulis hanya 16\)
+* **%H** menampilkan jam \(Hours\), **%M** menampilkan menit \(minutes\)
+* Kita dapat menambahkan string apa saja misal 'WIB', tanda '**:'** diantara jam dan menit, dsb.. intinya didalam fungsi formatLocalized\(\), secara otomatis akan mengubah variabel yang dikenali, yaitu huruf yang sebelumnya menggunakan tanda '%'   **** 
 

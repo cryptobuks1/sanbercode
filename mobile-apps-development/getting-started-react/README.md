@@ -1,8 +1,8 @@
-# Getting Started
+# Getting Started React
 
 Sebelum memulai ke React. Mari kita bahas tentang ES6 \(EcmaScript 2015\). ES6 adalah fitur bahasa pada pemrograman Javascript modern.
 
-#### Daftar Fitur ES6
+## Daftar Fitur ES6
 
 * Arrows Function
 * Classes
@@ -37,9 +37,9 @@ Tidak perlu menguasai seluruh fitur diatas. Diharuskan menguasai 8 fitur, dianta
 7. Template literals
 8. Promises
 
-##### Let + Const
+### Let + Const
 
-```js
+```javascript
 var x = 1;
 
 if (x === 1) {
@@ -52,7 +52,7 @@ console.log(x);
 console.log(x); // 2
 ```
 
-```js
+```javascript
 let x = 1;
 
 if (x === 1) {
@@ -65,16 +65,16 @@ if (x === 1) {
 console.log(x); // 1
 ```
 
-```js
+```javascript
 const number = 42;
 number = 100; // Uncaught TypeError: Assignment to constant variable.
 ```
 
-##### Arrow Functions
+### Arrow Functions
 
 Normal Javascript:
 
-```js
+```javascript
 function f (){
     // isi Function
 }
@@ -86,7 +86,7 @@ var f = function(){
 
 ES6 :
 
-```js
+```javascript
 var f = () => {
     //function
     return () => {
@@ -95,9 +95,9 @@ var f = () => {
 }
 ```
 
-##### Default Parameters
+### Default Parameters
 
-```js
+```javascript
 function multiply(a, b = 1) {
   return a * b;
 }
@@ -109,11 +109,11 @@ console.log(multiply(5));
 // expected output: 5
 ```
 
-##### Destructuring
+### Destructuring
 
 Normal Javascript:
 
-```js
+```javascript
 let studentName = {
     firstName: 'Peter',
     lastName: 'Parker'
@@ -125,7 +125,7 @@ const lastName = studentName.lastName;
 
 ES6:
 
-```js
+```javascript
 let studentName = {
     firstName: 'Peter',
     lastName: 'Parker'
@@ -137,9 +137,9 @@ console.log(firstName); // Peter
 console.log(lastName); // Parker
 ```
 
-#### Rest Parameters + Spread Operator
+## Rest Parameters + Spread Operator
 
-```js
+```javascript
 // Rest Parameters
 
 let scores = ['98', '95', '93', '90', '87', '85']
@@ -151,7 +151,7 @@ console.log(third) // 93
 console.log(restOfScores) // [90, 87, 85]
 ```
 
-```js
+```javascript
 let array1 = ['one', 'two']
 let array2 = ['three', 'four']
 let array3 = ['five', 'six']
@@ -167,9 +167,9 @@ let combinedArray = [...array1, ...array2, ...array3]
 console.log(combinedArray) // ['one', 'two', 'three', 'four', 'five', 'six']
 ```
 
-#### Enhanced object literals
+## Enhanced object literals
 
-```js
+```javascript
 const fullName = 'Zell Liew'
 
 const Zell = {
@@ -182,9 +182,9 @@ const Zell = {
 }
 ```
 
-#### Template Literals
+## Template Literals
 
-```js
+```javascript
 const firstName = 'Zell'
 const lastName = 'Liew'
 const teamName = 'unaffiliated'
@@ -193,6 +193,4 @@ const theString = `${firstName} ${lastName}, ${teamName}`
 
 console.log(theString)
 ```
-
-
 

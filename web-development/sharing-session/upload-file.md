@@ -4,7 +4,7 @@ _by: Khairun ft Abdul Alim_
 
 Ada 2 cara untuk upload file :
 
-#### **Menggunakan code manual PHP**
+## **Menggunakan code manual PHP**
 
 ```php
 // fungsi ini menerima kiriman request dari form
@@ -37,15 +37,15 @@ public function functionName(Request $request)
             $input['file-x'] = $uploadPath . '/' . $fileName;
 
     }
-    
+
     // create data baru, contohnya menggunakan menggunakan Model Article
     Article::create($input);
-    
+
 
 }
 ```
 
-#### Menggunakan package [**Laravel File Manager by Unisharp**](https://unisharp.github.io/laravel-filemanager/)
+## Menggunakan package [**Laravel File Manager by Unisharp**](https://unisharp.github.io/laravel-filemanager/)
 
 1. buatlah sebuah button, input, and image preview holder jika akan memilih gambar. tentukan id yang akan digunakan dalam input dan image berdasarkan `data-input` dan `data-preview`
 
@@ -69,15 +69,13 @@ public function functionName(Request $request)
 
 3. Init filemanager dengan type. \(membutuhkan jQuery\)
 
-   ```js
+   ```javascript
     $('#lfm').filemanager('image');
    ```
 
    atau
 
-   ```js
+   ```javascript
     $('#lfm').filemanager('file');
    ```
-
-
 

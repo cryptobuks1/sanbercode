@@ -1,8 +1,10 @@
-#### Create a new App
+# Quick Start
 
-**Create React App **adalah cara terbaik untuk memulai pembuatan SPA\(Single Page Application\). Untuk memulai instalasi dibutuhkan versi Node &gt;= 6.
+### Create a new App
 
-```
+**Create React App** adalah cara terbaik untuk memulai pembuatan SPA\(Single Page Application\). Untuk memulai instalasi dibutuhkan versi Node &gt;= 6.
+
+```text
 npm install -g create-react-app
 create-react-app myApp
 
@@ -10,9 +12,9 @@ cd myApp
 npm start
 ```
 
-#### Hello World & Introducing JSX
+### Hello World & Introducing JSX
 
-```js
+```javascript
 ReactDOM.render(
   <h1>Hello, world!</h1>,
   document.getElementById('root')
@@ -21,9 +23,9 @@ ReactDOM.render(
 
 Tag diatas bukan html ataupun string. Itu disebut sebagai JSX dan JSX adalah ekstensi sintaks untuk JavaScript. React mencakup fakta bahwa logika rendering secara inheren digabungkan dengan logika UI lainnya: bagaimana kejadian ditangani, bagaimana keadaan berubah dari waktu ke waktu, dan bagaimana data disiapkan untuk ditampilkan.
 
-##### Menggabungkan Expressions dalam JSX
+#### Menggabungkan Expressions dalam JSX
 
-```js
+```javascript
 formatName = (user) => {
   return user.firstName + ' ' + user.lastName;
 }
@@ -45,18 +47,18 @@ ReactDOM.render(
 );
 ```
 
-#### Rendering an Element
+### Rendering an Element
 
-Misalkan, ada tag &lt;div&gt; dalam sebuah file html dengan id "root". **React **biasanya menggunakan satu DOM node. Jika menggunakan dalam sebuah aplikasi yang sudah ada, mungkin akan banyak "root" DOM sebanyak yang akan digunakan. Untuk render sebuah **React Element**, maka harus membawa keduanya ke dalam _ReactDOM.render\(\)._
+Misalkan, ada tag &lt;div&gt; dalam sebuah file html dengan id "root". **React** biasanya menggunakan satu DOM node. Jika menggunakan dalam sebuah aplikasi yang sudah ada, mungkin akan banyak "root" DOM sebanyak yang akan digunakan. Untuk render sebuah **React Element**, maka harus membawa keduanya ke dalam _ReactDOM.render\(\)._
 
-```js
+```javascript
 const element = <h1>Hello, world</h1>;
 ReactDOM.render(element, document.getElementById('root'));
 ```
 
-#### React hanya memperbarui apa yang dibutuhkan
+### React hanya memperbarui apa yang dibutuhkan
 
-```js
+```javascript
 function tick() {
   const element = (
     <div>
@@ -70,11 +72,11 @@ function tick() {
 setInterval(tick, 1000);
 ```
 
-#### Components dan Props
+### Components dan Props
 
 Cara paling sederhana untuk mendefinisikan component adalah dengan function :
 
-```js
+```javascript
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -82,7 +84,7 @@ function Welcome(props) {
 
 atau dengen menggunakan **ES6 classes :**
 
-```js
+```javascript
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
@@ -90,11 +92,11 @@ class Welcome extends React.Component {
 }
 ```
 
-##### Rendering sebuah Component
+#### Rendering sebuah Component
 
 untuk render sebuah component dapat menggunakan cara :
 
-```js
+```javascript
   ReactDOM.render(<Welcome />, document.getElementById('root'));
 
   // Or
@@ -104,11 +106,11 @@ untuk render sebuah component dapat menggunakan cara :
   ReactDOM.render(Welcome, document.getElementById('root'));
 ```
 
-#### Passing Props to a Component
+### Passing Props to a Component
 
 Props adalah property sebuah component. Di **React**, Props ber status immutable\(Read-Only\). Untuk passing data props dalam sebuah component dapat menggunakan cara seperti berikut :
 
-```js
+```javascript
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -129,11 +131,11 @@ ReactDOM.render(
 );
 ```
 
-#### Adding State to Component
+### Adding State to Component
 
-State juga property dari component. Perbedaan **Props **dan **State **adalah State mutable atau bisa diubah, tapi tidak bisa di gunakan untuk component lain.
+State juga property dari component. Perbedaan **Props** dan **State** adalah State mutable atau bisa diubah, tapi tidak bisa di gunakan untuk component lain.
 
-```js
+```javascript
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -151,11 +153,11 @@ class Clock extends React.Component {
 }
 ```
 
-#### React Lifecycle
+### React Lifecycle
 
 Lifecycle adalah method dari sebuah component untuk mengetahui fase dari sebuah aplikasi.
 
-```js
+```javascript
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -172,7 +174,7 @@ class Clock extends React.Component {
   componentWillUnmount() {
     clearInterval(this.timerID);
   }
-  
+
   tick() {
     this.setState({
       date: new Date()
@@ -190,30 +192,30 @@ class Clock extends React.Component {
 }
 ```
 
-#### constructor\(\)
+### constructor\(\)
 
 constructor adalah hal pertama yang dibaca sebuah **component**. Dari source code pertama constructor membawa argument props dari luar component dan initial state dalam sebuah **component.**
 
-#### render\(\)
+### render\(\)
 
 fase ini dieksekusi untuk menampilkan tag JSX.
 
-#### componentDidMount\(\)
+### componentDidMount\(\)
 
-**`componentDidMount `**adalah fase yang eksekusi setelah **render\(\)**. Dari source code diatas, setelah component ditampilkan. Maka state akan diupdate berdasarkan function **this.tick\(\)**.
+`componentDidMount`adalah fase yang eksekusi setelah **render\(\)**. Dari source code diatas, setelah component ditampilkan. Maka state akan diupdate berdasarkan function **this.tick\(\)**.
 
-#### componentWillUnmount\(\)
+### componentWillUnmount\(\)
 
-**componentWillUnmount **adalah fase yang dieksekusi saat component di hapus dari **DOM**.
+**componentWillUnmount** adalah fase yang dieksekusi saat component di hapus dari **DOM**.
 
-### Do Not Modify State Directly {#do-not-modify-state-directly}
+## Do Not Modify State Directly {#do-not-modify-state-directly}
 
-```js
+```javascript
 // Wrong
 this.state.comment = 'Hello';
 ```
 
-```js
+```javascript
 // Correct
 this.setState({comment: 'Hello'});
 ```

@@ -1,26 +1,28 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Web Development
 
-* [Pendahuluan](README.md)
-* [Rekomendasi Tools Tambahan](tes.md)
-* [Tutorial Favorit](tutorial-favorit.md)
-* [Sharing Session](sharing-session.md)
-  * [Helper di Laravel](sharing-session/laravel-helper.md)
-  * [Menggunakan Sweet Alert pada Laravel](menggunakan-sweet-alert-pada-laravel.md)
-  * [Upload File](sharing-session/upload-file.md)
-  * [Manipulasi Tanggal Menggunakan Carbon PHP](sharing-session/manipulasi-tanggal-menggunakan-carbon-php.md)
-  * [Email Error Exception](sharing-session/email-error-exception.md)
-  * [Membuat template di laravel](sharing-session/membuat-template-di-laravel.md)
-  * [Menggunakan Faker](sharing-session/database-faker-factory.md)
-  * [Oracle + Laravel](sharing-session/menggunakan-oracle-di-larave.md)
-  * [Membuat Animasi Sederhana Menggunakan jquery.parallax-scroll](sharing-session/membuat-animasi-sederhana-menggunakan-jqueryparallax-scroll.md)
-  * [Membuat Middleware Sendiri](membuat-middleware-sendiri.md)
-  * [Tambahan : Kapan Membuat Middleware?](sharing-session/tambahan-kapan-membuat-middleware.md)
+* [Pendahuluan](web-development/pendahuluan.md)
+* [Rekomendasi Tools Tambahan](web-development/rekomendasi-tools-tambahan.md)
+* [Tutorial Favorit](web-development/tutorial-favorit.md)
+* [Sharing Session](web-development/sharing-session/README.md)
+  * [Helper di Laravel](web-development/sharing-session/helper-di-laravel.md)
+  * [Menggunakan Sweet Alert pada Laravel](web-development/sharing-session/menggunakan-sweet-alert-pada-laravel.md)
+  * [Upload File](web-development/sharing-session/upload-file.md)
+  * [Manipulasi Tanggal Menggunakan Carbon PHP](web-development/sharing-session/manipulasi-tanggal-menggunakan-carbon-php.md)
+  * [Email Error Exception](web-development/sharing-session/email-error-exception.md)
+  * [Membuat template di laravel](web-development/sharing-session/membuat-template-di-laravel.md)
+  * [Menggunakan Faker](web-development/sharing-session/menggunakan-faker.md)
+  * [Oracle + Laravel](web-development/sharing-session/oracle-+-laravel.md)
+  * [Membuat Animasi Sederhana Menggunakan jquery.parallax-scroll](web-development/sharing-session/membuat-animasi-sederhana-menggunakan-jquery.parallax-scroll.md)
+  * [Membuat Middleware Sendiri](web-development/sharing-session/membuat-middleware-sendiri.md)
+  * [Tambahan : Kapan Membuat Middleware?](web-development/sharing-session/tambahan-kapan-membuat-middleware.md)
 
 ## Mobile Apps Development
 
-* [Tutorial Favorit React](tutorial-favorit-react.md)
-* [Getting Started React](getting-started.md)
-  * [Quick Start](getting-started/installation-react-js.md)
+* [Tutorial Favorit React](mobile-apps-development/tutorial-favorit-react.md)
+* [Getting Started React](mobile-apps-development/getting-started-react/README.md)
+  * [Quick Start](mobile-apps-development/getting-started-react/quick-start.md)
 
