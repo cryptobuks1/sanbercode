@@ -208,7 +208,7 @@ fase ini dieksekusi untuk menampilkan tag JSX.
 
 **componentWillUnmount** adalah fase yang dieksekusi saat component di hapus dari **DOM**.
 
-## Do Not Modify State Directly {#do-not-modify-state-directly}
+## Do Not Modify State Directly <a id="do-not-modify-state-directly"></a>
 
 ```javascript
 // Wrong
