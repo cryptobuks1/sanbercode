@@ -22,7 +22,8 @@
 
 ## Mobile Apps Development
 
-* [Tutorial Favorit React](mobile-apps-development/tutorial-favorit-react.md)
+* [Tutorial Favorit React](mobile-apps-development/tutorial-favorit-react/README.md)
+  * [Step By Step Belajar React](mobile-apps-development/tutorial-favorit-react/step-by-step-belajar-react.md)
 * [Getting Started React](mobile-apps-development/getting-started-react/README.md)
   * [Quick Start](mobile-apps-development/getting-started-react/quick-start.md)
 
