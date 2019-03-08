@@ -8,6 +8,7 @@
 * [Rekomendasi Tools Tambahan](web-development/rekomendasi-tools-tambahan.md)
 * [Tutorial Favorit](web-development/tutorial-favorit.md)
 * [Sharing Session](web-development/sharing-session/README.md)
+  * [Laravel Jobs Queue](web-development/sharing-session/laravel-jobs-queue.md)
   * [Implementasi HTTPS pada laravel](web-development/sharing-session/implementasi-https-pada-laravel.md)
   * [Helper di Laravel](web-development/sharing-session/helper-di-laravel.md)
   * [Menggunakan Sweet Alert pada Laravel](web-development/sharing-session/menggunakan-sweet-alert-pada-laravel.md)
