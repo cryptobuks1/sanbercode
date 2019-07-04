@@ -22,6 +22,7 @@
   * [Membuat Animasi Sederhana Menggunakan jquery.parallax-scroll](web-development/sharing-session/membuat-animasi-sederhana-menggunakan-jquery.parallax-scroll.md)
   * [Membuat Middleware Sendiri](web-development/sharing-session/membuat-middleware-sendiri.md)
   * [Tambahan : Kapan Membuat Middleware?](web-development/sharing-session/tambahan-kapan-membuat-middleware.md)
+  * [Menggunakan Gitlab](web-development/sharing-session/menggunakan-gitlab.md)
 
 ## Mobile Apps Development
 
