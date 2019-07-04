@@ -1,5 +1,5 @@
 ---
-description: Panduan menggunakan gitlab untuk pertama kali
+description: 'Panduan menggunakan gitlab untuk pertama kali. (Oleh: Abduh)'
 ---
 
 # Menggunakan Gitlab
