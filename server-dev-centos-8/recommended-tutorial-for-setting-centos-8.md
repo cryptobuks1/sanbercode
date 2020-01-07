@@ -18,3 +18,7 @@ yum install php-xml
 yum install php-pecl-zip
 ```
 
+## Install MySQL
+
+{% embed url="https://linuxize.com/post/how-to-install-mysql-on-centos-8/" %}
+
