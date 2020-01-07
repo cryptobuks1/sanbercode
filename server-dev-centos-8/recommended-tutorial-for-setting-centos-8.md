@@ -2,9 +2,19 @@
 
 ## Setting Let's Encrypt HTTPS + Apache 2.4
 
-[https://linuxize.com/post/secure-apache-with-let-s-encrypt-on-centos-8/](https://linuxize.com/post/secure-apache-with-let-s-encrypt-on-centos-8/)
+{% embed url="https://linuxize.com/post/secure-apache-with-let-s-encrypt-on-centos-8/" %}
 
 ## Install PHP-mbstring 
 
-[https://linuxconfig.org/install-php-mbstring-on-redhat-8](https://linuxconfig.org/install-php-mbstring-on-redhat-8)
+{% embed url="https://linuxconfig.org/install-php-mbstring-on-redhat-8" %}
+
+## install php-dom and php-zip
+
+```text
+yum install php-xml
+```
+
+```text
+yum install php-pecl-zip
+```
 
