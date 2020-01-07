@@ -39,3 +39,7 @@
 * [Express](node-js/express/README.md)
   * [Letsencrypt + express](node-js/express/letsencrypt-+-express.md)
 
+## Server Dev Centos 8
+
+* [Recommended tutorial for setting centos 8](server-dev-centos-8/recommended-tutorial-for-setting-centos-8.md)
+
