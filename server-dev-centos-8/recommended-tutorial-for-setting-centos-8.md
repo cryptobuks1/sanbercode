@@ -22,3 +22,9 @@ yum install php-pecl-zip
 
 {% embed url="https://linuxize.com/post/how-to-install-mysql-on-centos-8/" %}
 
+## Install phpMyAdmin
+
+{% embed url="https://www.itzgeek.com/how-tos/linux/centos-how-tos/how-to-install-phpmyadmin-on-rhel-8.html" %}
+
+
+
