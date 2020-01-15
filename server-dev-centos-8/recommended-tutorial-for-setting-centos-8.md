@@ -44,3 +44,13 @@ temporally change it to permissive
 setenforce 0
 ```
 
+## Akses local server menggunakan SSH Tunnel
+
+{% embed url="https://docs.bitnami.com/virtual-machine/faq/get-started/access-ssh-tunnel/" %}
+
+
+
+```text
+ssh -N -L SOURCE-PORT:127.0.0.1:DESTINATION-PORT root@SERVER-HOST
+```
+
