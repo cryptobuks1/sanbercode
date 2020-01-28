@@ -40,3 +40,9 @@ EXPOSE 9022:22
 * Run a container with `docker run --privileged -ti -e container=docker -v /sys/fs/cgroup:/sys/fs/cgroup centos7-systemd /usr/sbin/init`
 * You should have systemd in your container
 
+## Install PHP 7 in centos 7
+
+{% embed url="https://tecadmin.net/install-php7-on-centos7/" %}
+
+
+
