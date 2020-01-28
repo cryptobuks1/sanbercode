@@ -6,16 +6,14 @@ description: 'pada tutorial kali ini, diasumsikan sudah pada install docker ya..
 
 ## How to run CentOS with systemd inside a Docker container
 
-1. **Pull centos image** Saat ini centos image ketika di pull, maka akan mengambil versi yang terbaru yaitu centos 8, yang mana saat ini masih terbilang baru dan banyak library yang belum compatible.. maka kita akan gunakan image spesifik **centos:7** 
-2. Set up a docker file like the one below
+* **Pull centos image** Saat ini centos image ketika di pull, maka akan mengambil versi yang terbaru yaitu centos 8, yang mana saat ini masih terbilang baru dan banyak library yang belum compatible.. maka kita akan gunakan image spesifik **centos:7** 
+* Set up a docker file like the one below
 
 ```
 $ vi mydockerfile
 ```
 
-setelah membuat file baru untuk setting docker, edit file dengan menambahkan kode berikut:
-
-
+* setelah membuat file baru untuk setting docker, edit file dengan menambahkan kode berikut:
 
 ```
 FROM centos:7
@@ -35,12 +33,4 @@ VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
 ```
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
-
-
-
+* 
