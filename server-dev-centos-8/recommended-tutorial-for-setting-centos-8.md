@@ -54,3 +54,11 @@ setenforce 0
 ssh -N -L SOURCE-PORT:127.0.0.1:DESTINATION-PORT root@SERVER-HOST
 ```
 
+```text
+ssh -L 8000:192.168.1.1:80 root@sanberhost.ip-dynamic.com
+```
+
+open localhost:8000 di browser &gt;&gt; seolah membuka IP router 192.168.1.1
+
+
+
