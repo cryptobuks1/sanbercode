@@ -44,5 +44,9 @@ EXPOSE 9022:22
 
 {% embed url="https://tecadmin.net/install-php7-on-centos7/" %}
 
+## Setting SSH centos 7
+
+{% embed url="https://phoenixnap.com/kb/how-to-enable-ssh-centos-7" %}
+
 
 
