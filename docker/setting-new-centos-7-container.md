@@ -31,6 +31,12 @@ rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
+EXPOSE 9080:80
+EXPOSE 9443:443
+EXPOSE 9022:22
 ```
 
-* 
+* Build it - `docker build --rm -t centos7-systemd - < mydockerfile`
+* Run a container with `docker run --privileged -ti -e container=docker -v /sys/fs/cgroup:/sys/fs/cgroup centos7-systemd /usr/sbin/init`
+* You should have systemd in your container
+
