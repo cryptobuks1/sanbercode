@@ -40,9 +40,13 @@
 * [Express](node-js/express/README.md)
   * [Letsencrypt + express](node-js/express/letsencrypt-+-express.md)
 
-## Server Dev Centos 8
+## Server Dev
 
-* [Recommended tutorial for setting centos 8](server-dev-centos-8/recommended-tutorial-for-setting-centos-8.md)
-* [Sharing Session](server-dev-centos-8/sharing-session/README.md)
-  * [Setting Node JS + Apache](server-dev-centos-8/sharing-session/setting-node-js-+-apache.md)
+* [Recommended tutorial for setting centos 8](server-dev/recommended-tutorial-for-setting-centos-8.md)
+* [Sharing Session](server-dev/sharing-session/README.md)
+  * [Setting Node JS + Apache](server-dev/sharing-session/setting-node-js-+-apache.md)
+
+## Docker
+
+* [Setting new centos 7 container](docker/setting-new-centos-7-container.md)
 
