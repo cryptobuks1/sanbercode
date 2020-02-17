@@ -50,6 +50,8 @@ Ini akan membuat class`ExceptionOccured`di dalam direktori`app/Mail`.
 
 Dengan hanya mengirim email tidak akan menyelesaikan masalah. Kita membutuhkan full stack trace dari exceptions. Dan untuk itu, kita bisa menggunakan komponen Debug milik Symfony.
 
+di bagian `App\Exceptions\Handler` **Class,** tambahkan method sendEmail sbb:
+
 ```php
 public function sendEmail(Exception $exception)
 {
@@ -76,7 +78,7 @@ use Symfony\Component\Debug\ExceptionHandler as SymfonyExceptionHandler;
 use App\Mail\ExceptionOccured;
 ```
 
-lalu, dalam`ExceptionOccured`mailer class:
+lalu, dalam`ExceptionOccured`mailer class \(di dalam direktori app/Mail\):
 
 ```php
 <?php
