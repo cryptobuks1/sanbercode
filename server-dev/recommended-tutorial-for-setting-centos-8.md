@@ -60,5 +60,11 @@ ssh -L 8000:192.168.1.1:80 root@sanberhost.ip-dynamic.com
 
 open localhost:8000 di browser &gt;&gt; seolah membuka IP router 192.168.1.1
 
+## Server dashboard menggunakan webmin
+
+{% embed url="https://www.howtoforge.com/how-to-install-webmin-on-centos-8/" %}
+
+{% embed url="https://bobcares.com/blog/webmin-apache-reverse-proxy/" %}
+
 
 
